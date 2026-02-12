@@ -39,4 +39,4 @@ You can download the latest compiled version from the **[Releases](https://githu
 *   **Email Support:** support@vramshield.com
 
 ---
-© 2026 53 Software. All rights reserved.
+© 2026. 53 Software. All rights reserved.
