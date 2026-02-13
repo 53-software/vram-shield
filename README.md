@@ -16,7 +16,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Production--Ready-green" alt="Status">
-  <img src="https://img.img.shields.io/badge/Platform-Windows%2010%20%7C%2011-blue" alt="Platform">
+  <img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-blue" alt="Platform">
   <img src="https://img.shields.io/badge/License-Proprietary-red" alt="License">
 </p>
 
