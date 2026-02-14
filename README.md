@@ -50,6 +50,14 @@ You can download the latest compiled version from the **[Releases](https://githu
 
 > **Note:** This repository is used for distribution and issue tracking only. The source code is proprietary and not available for public access.
 
+## Technical Acknowledgments
+
+VRAM Shield is a proprietary product of 53 Software. To provide industry-standard sensor accuracy, we utilize:
+
+*   **[Libre Hardware Monitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor):** Used as a backend library for hardware sensor data acquisition. Licensed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
+
+*All protection algorithms, logic, and UI components are independent developments of 53 Software.*
+
 ## Support & Links
 
 *   **Official Website:** [vramshield.com](https://vramshield.com)
@@ -58,5 +66,7 @@ You can download the latest compiled version from the **[Releases](https://githu
 *   **Email Support:** support@vramshield.com
 
 ---
+
+**VRAM Shield is protecting your hardware. Support the project by giving this repository a ⭐! It helps us a lot.** 
 
 © 2026. 53 Software. All rights reserved.
