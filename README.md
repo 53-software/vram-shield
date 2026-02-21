@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <strong>Intelligent thermal protection for high-performance laptop GPUs.</strong>
+  <strong>Advanced thermal management and workload scheduling for high-performance GPUs.</strong>
 </p>
 
 
@@ -23,20 +23,20 @@
 
 ---
 
-**VRAM Shield** is a professional system utility designed to protect modern laptop video memory (VRAM) from critical overheating.
+**VRAM Shield** is a professional system utility designed to manage thermal loads and maintain compute stability during sustained high-load tasks.
 
 ## Why VRAM Shield?
 
-Modern high-performance laptops often suffer from "Silent Overheating". While the GPU core remains cool, the VRAM chips can reach dangerous temperatures during AI generation, 3D rendering, or intensive gaming. This leads to hardware degradation and performance issues.
+Modern high-performance laptops face significant thermal density challenges. During AI generation (Stable Diffusion, LLMs), professional 3D rendering, or intensive gaming, VRAM often reaches its operational limits long before the GPU core. This leads to firmware-level throttling and inconsistent performance.
 
-VRAM Shield solves this by intelligently managing GPU-heavy processes using **advanced mathematical logic**.
+VRAM Shield solves this by intelligently scheduling GPU-heavy processes using **advanced mathematical logic** to ensure sustained, predictable performance.
 
 ## Key Features
 
-*   **Real-time VRAM Monitoring:** Precise tracking of memory temperature and hardware metrics.
-*   **Pulse Throttling (FREE):** Reliable protection engine to keep temperatures under control.
-*   **Smart Throttling (PRO):** Our premium engine that uses advanced mathematical logic for maximum performance and smooth gameplay.
-*   **Panic Mode:** An emergency safety system that activates at critical thresholds to protect your hardware.
+*   **Real-time Telemetry:** Precise tracking of VRAM junction temperatures and hardware metrics.
+*   **Pulse Throttling (FREE):** A static scheduling engine to keep thermal loads within a target range.
+*   **Smart Throttling (PRO):** A dynamic engine that uses advanced mathematical logic to micro-adjust load for maximum stability and fluid rendering.
+*   **Panic Mode:** An emergency halt protocol that activates at critical thermal thresholds to maintain operational stability.
 *   **Multilingual Interface:** Full support for 8 languages.
 
 ## Download & Installation
@@ -44,9 +44,9 @@ VRAM Shield solves this by intelligently managing GPU-heavy processes using **ad
 You can download the latest compiled version from the **[Releases](https://github.com/53-software/vram-shield/releases)** section.
 
 1.  Download the latest `VRAMShield_X.X.X.exe`.
-2.  Run the application as Administrator.
-3.  **On first launch, VRAM Shield will automatically install and configure LibreHardwareMonitor for you.**
-4.  Once installed, the application will start monitoring and protecting your VRAM.
+2.  Run the application as Administrator (required for process management).
+3.  **On first launch, VRAM Shield will automatically configure the LibreHardwareMonitor backend.**
+4.  Once active, the application will begin managing your VRAM thermal load.
 
 > **Note:** This repository is used for distribution and issue tracking only. The source code is proprietary and not available for public access.
 
@@ -56,17 +56,17 @@ VRAM Shield is a proprietary product of 53 Software. To provide industry-standar
 
 *   **[Libre Hardware Monitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor):** Used as a backend library for hardware sensor data acquisition. Licensed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
 
-*All protection algorithms, logic, and UI components are independent developments of 53 Software.*
+*All scheduling algorithms, logic, and UI components are independent developments of 53 Software.*
 
 ## Support & Links
 
 *   **Official Website:** [vramshield.com](https://vramshield.com)
-*   **Pricing & PRO Version:** [Get PRO Access](https://vramshield.com/#pricing)
+*   **Pricing & PRO Version:** [Select Your Edition](https://vramshield.com/#pricing)
 *   **Documentation:** [Quick Start Guide](https://vramshield.com/quick-start)
 *   **Email Support:** support@vramshield.com
 
 ---
 
-**VRAM Shield is protecting your hardware. Support the project by giving this repository a ⭐! It helps us a lot.** 
+**VRAM Shield is managing your hardware thermals. Support the project by giving this repository a ⭐! It helps us a lot.** 
 
 © 2026. 53 Software. All rights reserved.
