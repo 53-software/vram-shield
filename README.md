@@ -45,7 +45,7 @@ You can download the latest compiled version from the **[Releases](https://githu
 
 1.  Download the latest `VRAMShield_X.X.X.exe`.
 2.  Run the application as Administrator (required for process management).
-3.  **On first launch, VRAM Shield will automatically configure the LibreHardwareMonitor backend.**
+3.  **On first launch, VRAM Shield will automatically configure the LibreHardwareMonitor backend.** This requires Administrator privileges to access low-level hardware sensors.
 4.  Once active, the application will begin managing your VRAM thermal load.
 
 > **Note:** This repository is used for distribution and issue tracking only. The source code is proprietary and not available for public access.
@@ -54,7 +54,7 @@ You can download the latest compiled version from the **[Releases](https://githu
 
 VRAM Shield is a proprietary product of 53 Software. To provide industry-standard sensor accuracy, we utilize:
 
-*   **[Libre Hardware Monitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor):** Used as a backend library for hardware sensor data acquisition. Licensed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
+*   **[Libre Hardware Monitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor):** VRAM Shield automates the deployment and configuration of LibreHardwareMonitor to acquire real-time sensor data via its local API. Licensed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
 
 *All scheduling algorithms, logic, and UI components are independent developments of 53 Software.*
 
@@ -64,6 +64,17 @@ VRAM Shield is a proprietary product of 53 Software. To provide industry-standar
 *   **Pricing & PRO Version:** [Select Your Edition](https://vramshield.com/#pricing)
 *   **Documentation:** [Quick Start Guide](https://vramshield.com/quick-start)
 *   **Email Support:** support@vramshield.com
+
+## Legal Disclaimer
+
+**VRAM Shield is provided "AS IS", without warranty of any kind.**
+
+By downloading and using this software, you agree that:
+1.  **Use at Your Own Risk:** The authors are not responsible for any hardware damage, data loss, or system instability.
+2.  **Not a Safety Guarantee:** While designed to mitigate heat, this software cannot guarantee the prevention of hardware failure due to physical defects or extreme usage conditions.
+3.  **License:** This software is proprietary. Unauthorized redistribution, reverse engineering, or cracking is prohibited.
+
+Please read the full [End User License Agreement](https://vramshield.com/terms) and [Privacy Policy](https://vramshield.com/privacy.html) before use.
 
 ---
 
