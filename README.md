@@ -2,6 +2,7 @@
   <img src="img/Logo.png" width="1450" alt="VRAM Shield Logo">
 </p>
 
+
 <p align="center">
   <strong>Advanced thermal management and workload scheduling for high-performance GPUs.</strong>
 </p>
@@ -27,13 +28,14 @@
 
 ## Why VRAM Shield?
 
-Modern high-performance laptops face significant thermal density challenges. During AI generation (Stable Diffusion, LLMs), professional 3D rendering, or intensive gaming, VRAM often reaches its operational limits long before the GPU core. This leads to firmware-level throttling and inconsistent performance.
+Modern high-performance laptops face significant thermal density challenges. During AI generation (Stable Diffusion, LLMs), professional 3D rendering, or intensive gaming, VRAM often reaches its operational limits long before the GPU core. This leads to firmware-level throttling, inconsistent performance, and worst of all—**the irreversible degradation of expensive, irreplaceable video memory chips.** 
 
 VRAM Shield solves this by intelligently scheduling GPU-heavy processes using **advanced mathematical logic** to ensure sustained, predictable performance.
 
 ## Key Features
 
-*   **Real-time Telemetry:** Precise tracking of VRAM junction temperatures and hardware metrics.
+*   **Native NVIDIA Integration:** Direct communication with the NVIDIA driver (NVML) for zero-latency, zero-overhead telemetry without third-party background monitors.
+*   **True Hardware & Virtual VRAM Sensors (NEW):** VRAM Shield prioritizes reading real, physical temperature sensors on modern GPUs. For older graphics cards (RTX 30-series and below) where physical VRAM sensors do not exist, we specifically developed the **Virtual VRAM Sensor**. This proprietary mathematical model was calibrated through rigorous real-world stress testing in the 53 Software hardware laboratory to accurately estimate memory temperatures, ensuring 100% hardware compatibility and honest monitoring.
 *   **Pulse Throttling (FREE):** A static scheduling engine to keep thermal loads within a target range.
 *   **Smart Throttling (PRO):** A dynamic engine that uses advanced mathematical logic to micro-adjust load for maximum stability and fluid rendering.
 *   **Panic Mode:** An emergency halt protocol that activates at critical thermal thresholds to maintain operational stability.
@@ -45,18 +47,18 @@ You can download the latest compiled version from the **[Releases](https://githu
 
 1.  Download the latest `VRAMShield_X.X.X.exe`.
 2.  Run the application as Administrator (required for process management).
-3.  **On first launch, VRAM Shield will automatically configure the LibreHardwareMonitor backend.** This requires Administrator privileges to access low-level hardware sensors.
-4.  Once active, the application will begin managing your VRAM thermal load.
+3.  **On first launch, VRAM Shield will automatically download and install required Windows components (.NET Desktop Runtime & WebView2) if they are missing from your system.**
+4.  Once active, the application will begin managing your VRAM thermal load natively.
 
 > **Note:** This repository is used for distribution and issue tracking only. The source code is proprietary and not available for public access.
 
-## Technical Acknowledgments
+## Technical Architecture
 
-VRAM Shield is a proprietary product of 53 Software. To provide industry-standard sensor accuracy, we utilize:
+VRAM Shield is a proprietary product of 53 Software. 
 
-*   **[Libre Hardware Monitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor):** VRAM Shield automates the deployment and configuration of LibreHardwareMonitor to acquire real-time sensor data via its local API. Licensed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
+Starting with version 2.3.0, we have completely removed external third-party dependencies. VRAM Shield now utilizes direct, low-level integration with the **NVIDIA Management Library (NVML)**. This ensures enterprise-grade security, eliminates false positive antivirus detections, and provides instantaneous sensor readings.
 
-*All scheduling algorithms, logic, and UI components are independent developments of 53 Software.*
+*All scheduling algorithms, the Virtual VRAM Sensor logic, and UI components are independent developments of 53 Software.*
 
 ## Support & Links
 
@@ -70,6 +72,7 @@ VRAM Shield is a proprietary product of 53 Software. To provide industry-standar
 **VRAM Shield is provided "AS IS", without warranty of any kind.**
 
 By downloading and using this software, you agree that:
+
 1.  **Use at Your Own Risk:** The authors are not responsible for any hardware damage, data loss, or system instability.
 2.  **Not a Safety Guarantee:** While designed to mitigate heat, this software cannot guarantee the prevention of hardware failure due to physical defects or extreme usage conditions.
 3.  **License:** This software is proprietary. Unauthorized redistribution, reverse engineering, or cracking is prohibited.
